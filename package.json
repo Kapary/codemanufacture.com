@@ -6,9 +6,11 @@
   "private": true,
   "dependencies": {
     "@types/classnames": "^2.2.6",
+    "@types/enzyme": "^3.1.15",
     "@types/uniqid": "^4.1.2",
     "babel-plugin-styled-components": "^1.5.1",
     "classnames": "^2.2.6",
+    "enzyme": "^3.7.0",
     "gatsby": "^2.0.18",
     "gatsby-plugin-canonical-urls": "^2.0.6",
     "gatsby-plugin-catch-links": "^2.0.5",
@@ -36,6 +38,13 @@
   "keywords": [
     "gatsby"
   ],
+  "jest": {
+    "setupTestFrameworkScriptFile": "./jest.config.js",
+    "transform": {
+      "^.+\\.js$": "babel-jest",
+      "^.+\\.ts$": "babel-jest"
+      }
+  },
   "license": "Apache-2.0",
   "main": "n/a",
   "scripts": {
